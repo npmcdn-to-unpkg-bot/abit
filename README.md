@@ -14,6 +14,7 @@ Version 1.0
 <li><a href="http://browsersync.io/">Browsersync</a>: for auto browser-refreshing and syncing.</li>
 <li><a href="http://sass-lang.com/">Sass</a> with <a href="https://github.com/floridoo/gulp-sourcemaps">Sourcemaps</a></li>
 <li><a href="http://simplaio.github.io/rucksack/">Rucksack</a> with Autoprefixer</li>
+<li><a href="https://github.com/Jinksi">Revcheck</a> Check your git webhook status</li>
 </ul>
 
 <h3>Dependencies:</h3>
@@ -22,7 +23,7 @@ Version 1.0
 <li><a href="https://nodejs.org/en/">Node</a> &amp; <a href="https://docs.npmjs.com/getting-started/installing-node">npm</a></li>
 </ul>
 
-<h3Installation:</h3>
+<h3>Installation:</h3>
 
 <ul>
 <li>Clone or download the repo into your theme folder</li>
@@ -38,6 +39,7 @@ Version 1.0
 <ul>
 <li>Browsersync is set to work via <code>flex.dev</code> as a proxy. You will need to change this ( e.g. use <code>localhost:8888</code> for MAMP ). You can change this setting in <code>gulpfile.js</code></li>
 <li>Open http://localhost:3001 in your browser for more Browsersync settings</li>
+<li>Revcheck: terminal into theme dir <code>revcheck -a</code></li>
 </ul>
 
 <h3>Deploying with <a href="https://github.com/LeanMeanFightingMachine/dploy">DPLOY</a>:</h3>
