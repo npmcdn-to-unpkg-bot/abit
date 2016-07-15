@@ -1,0 +1,322 @@
+/*
+---------------------------------------------------------
+ */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: flex;
+	width: 100%;
+	background: url("images/80-white.png") 0 0 repeat;
+	transition-duration: 0.4s;
+	height: 90px;
+	.wrap {
+		overflow: visible;
+	}
+	.logo {
+		width: 120px;
+		height: 120px;
+		background: url("images/logo.png") 0 0 no-repeat;
+		background-size: cover;
+		display: inline-block;
+		float: left;
+	}
+	.search {
+		margin: 2.3rem 0 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20px;
+		form {
+			display: none;
+		}
+		.fa {
+			cursor: pointer;
+		}
+		input[type=search] {
+			position: absolute;
+			top: 53px;
+			right: 40px;
+			padding: 0.5rem;
+			width: 160px;
+			color: $dark-grey;
+			background: url("images/80-white.png") 0 0 repeat;
+			cursor: auto;
+			border: $blue 1px solid;
+		}
+		button {
+			position: absolute;
+			top: 53px;
+			right: 0;
+			width: 40px;
+			text-align: center;
+			height: 40px;
+			padding: 0;
+			color: $white;
+			border: $blue 1px solid;
+			&:before {
+			    content: "\f002";
+			    font-family: FontAwesome;
+			    left:-5px;
+			    position:absolute;
+			    top:10px;
+				left: 12px;
+				color: $white;
+			 }
+		}
+	}
+	.search input:-moz-placeholder {
+		color: $grey;
+	}
+	.search input::-webkit-input-placeholder {
+		color: $grey;
+	}
+}
+header.solid {
+	background: #fff;
+	input[type=search] {
+		background: #fff;
+	}
+}
+.mobile-nav {
+	display: none;
+}
+#main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 900px;
+	margin: 2.3rem auto 0;
+}
+nav ul {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	width: auto;
+	li {
+		display: inline-block;
+		float: left;
+		position: relative;
+		a {
+			color: $grey;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			line-height: 1;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 2.4rem 1rem;
+			overflow: hidden;
+		}
+	}
+}
+nav ul li a:hover {
+	color: $blue;
+}
+.blog nav ul li.menu-item-15 > a,
+.category nav ul li.menu-item-15 > a,
+.page-template-page-community-featured nav ul li.menu-item-16 > a,
+.single-post nav ul li.menu-item-15 > a,
+.single-quote nav ul li.menu-item-16 > a,
+.tag nav ul li.menu-item-15 > a,
+.tax-quote_location nav ul li.menu-item-16 > a,
+.woocommerce nav ul li.menu-item-20 > a,
+.woocommerce-page nav ul li.menu-item-20 > a,
+nav ul li.current_page_item > a,
+nav ul li.current_page_ancestor > a  {
+	background: url("images/nav-current.png") 0 3px repeat-x;
+	color: $blue;
+}
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+	z-index: 19999;
+	top: 52px;
+}
+nav ul ul {
+	display: block;
+	margin: 0;
+	padding: 1rem 1rem 0;
+	position: absolute;
+	width: 250px;
+	z-index: 19999;
+	background: $white;
+	transition: all 0.3s linear !important;
+	overflow: visible;
+	opacity: 0.99;
+}
+nav ul ul:after {
+	bottom: 100%;
+	left: 12%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: $blue;
+	border-width: 10px;
+	margin-left: -10px;
+}
+nav ul ul li {
+	display: block;
+	float: none;
+}
+nav ul ul a {
+	display: block;
+	padding: 0.3rem 0 0.6rem;
+	margin: 0 0 0.4rem;
+	text-transform: none;
+	border-bottom: 1px solid $border-grey;
+}
+nav ul ul li.current_page_item a {
+	background: none;
+	color: $blue;
+}
+
+nav ul ul li:last-child a {
+	border-bottom: none;
+}
+
+// courses
+
+	nav ul li.menu-item-20:hover ul {
+		display: flex;
+		flex-wrap: wrap;
+		z-index: 19999;
+		top: 52px;
+	}
+	nav ul li.menu-item-20 ul {
+		display: none;
+		margin: 0;
+		padding: 1rem;
+		position: absolute;
+		top: -100%;
+		left: -75px;
+		width: 1000px;
+		z-index: 19999;
+		background: $white;
+		transition: all 0.3s linear !important;
+		overflow: visible;
+		opacity: 0.99;
+	}
+	nav ul li.menu-item-20 li,
+	nav ul li.menu-item-20 ul {
+		transition: all 0.3s linear !important;
+	}
+	nav ul li.menu-item-20 ul:after {
+		bottom: 100%;
+		left: 11%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(255, 255, 255, 0);
+		border-bottom-color: $blue;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	nav ul li.menu-item-20 ul li {
+		display: inline-block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		z-index: 19999;
+		border: 1px solid $border-grey;
+		position: relative;
+		text-align: center !important;
+	}
+	nav ul li.menu-item-20 ul li:hover {
+		background: $border-grey;
+	}
+	nav ul li.menu-item-20 ul li:nth-child(-n+6) {
+		border-top: none;
+	}
+	nav ul li.menu-item-20 ul li:nth-child(n+6) {
+		border-bottom: none;
+	}
+	nav ul li.menu-item-20 ul li:first-child,
+	nav ul li.menu-item-20 ul li:nth-child(6) {
+		border-left: none;
+	}
+	nav ul li.menu-item-20 ul li:last-child,
+	nav ul li.menu-item-20 ul li:nth-child(5) {
+		border-right: none;
+	}
+	nav ul li.menu-item-20 ul li a {
+		width: 158px;
+		height: 48px;
+		font-size: 1rem;
+		line-height: normal;
+		color: $dark-grey;
+		z-index: 19999;
+		position: relative;
+		display: block;
+		text-align: center;
+		padding: 110px 20px 20px 20px;
+		font-family: $font-family-blocky;
+		letter-spacing: 0.1rem;
+		border-bottom: none;
+		overflow: hidden;
+	}
+	nav ul li.menu-item-20 ul li a:before {
+		content: "";
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		margin: 1rem auto;
+		top: 1rem;
+		left: 50%;
+		margin: 0 0 0 -40px;
+	}
+	.menu-item-745 a:before {
+		background: url("images/cat-icon-blue-business.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-747 a:before {
+		background: url("images/cat-icon-blue-earlyChildcare.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-748 a:before {
+		background: url("images/cat-icon-blue-community.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-749 a:before {
+		background: url("images/cat-icon-blue-training.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-750 a:before {
+		background: url("images/cat-icon-blue-IT.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-751 a:before {
+		background: url("images/cat-icon-blue-workSkills.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-752 a:before {
+		background: url("images/cat-icon-blue-smallBusiness.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-753 a:before {
+		background: url("images/cat-icon-blue-firstAid.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-746 a:before {
+		background: url("images/cat-icon-blue-leisure.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.menu-item-754 a:before {
+		background: url("images/cat-icon-blue-lifeSkills.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+	nav ul li.menu-item-20 li:hover ul li a:hover,
+	nav ul li.menu-item-20 ul li a:hover {
+		color: $blue;
+		z-index: 19999;
+	}

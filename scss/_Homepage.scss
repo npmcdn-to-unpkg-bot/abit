@@ -1,0 +1,546 @@
+// Homepage
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#homeslider {
+	position: relative;
+	overflow: hidden;
+	.flickity {
+		display: none;
+	}
+	.flickity-enabled {
+		display: block;
+	}
+	.slide {
+		width: 100%;
+		height: 800px;
+		background-size: cover !important;
+		position: relative;
+		.text-box {
+			position: relative;
+			width: 40%;
+			height: 800px;
+			display: flex;
+			justify-content:  center;
+			flex-direction: column;
+			font-family: $font-family-secondary;
+			color: $white;
+			padding: 0 10%;
+			.title {
+				font-size: 4rem;
+				line-height: 1;
+				font-weight: 600;
+				text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+			}
+			.blue {
+				font-size: 2rem;
+				font-weight: 400;
+				background: $blue;
+				display: inline-block;
+				width: auto;
+				padding: 1rem 2rem;
+				color: $dark-grey;
+				margin: 2rem 0 0 0;
+				font-family: $font-family-primary;
+				font-weight: 300;
+			}
+		}
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
+			.text-box {
+				float: right;
+			}
+		}
+	}
+}
+
+.tab {
+	background: $white;
+	color: $dark-grey;
+	letter-spacing: 0.1rem;
+	font-family: $font-family-blocky;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	font-size: 0.8rem;
+}
+
+.home h2 {
+	font-size: 2.5rem;
+	line-height: 1;
+	font-weight: 600;
+	margin: 1.5rem 0 0.5rem 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.section-one {
+	background: url(images/section-1.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 0;
+	.wrap {
+		display: flex;
+		justify-content:  center;
+		flex-direction: row;
+		height: 550px;
+		.left {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 0 2rem;
+			color: $white;
+			.tab {
+				left: -2rem;
+				display: inline;
+				background: $white;
+				color: $dark-grey;
+			}
+			p {
+				margin: 0 0 1rem 0;
+				padding: 0;
+			}
+			.pagelink {
+				color: $white;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+				font-family: $font-family-blocky;
+				line-height: 1.5;
+				margin: 3rem 0 0 0;
+				display: inline-block;
+				background:  url(images/arrow-pagelink-blue.png) center right no-repeat;
+				font-weight: 400;
+				padding: 0 35px 0 0;
+				height: 25px;
+				&:hover {
+					color: $dark-grey;
+					background:  url(images/arrow-pagelink-grey.png) top right no-repeat;
+				}
+			}
+		}
+		.right {
+			position: relative;
+			text-align: center;
+			.boy {
+				position: absolute;
+				bottom: -20%;
+				right: 0;
+				margin: 0;
+				width: 343px;
+				height: 371px;
+				background: url(images/boy.png) 0 0 no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.section-two {
+	background: url(images/section-2.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 3rem 0 0 0 ;
+	.wrap {
+		text-align: center;
+		h2 {
+			color: $grey;
+			margin: 2rem auto;
+			width: 82%;
+		}
+		.tab {
+			margin: 2rem 0 0 0;
+			background: $white;
+			color: $dark-grey;
+		}
+	}
+}
+
+.popular-courses {
+	text-align: center;
+	h2 {
+		font-family: $font-family-primary;
+		font-weight: 300;
+		text-transform: none;
+		margin: 2rem auto;
+	}
+	.products {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.section-three {
+	background: url(images/section-3.png) top center no-repeat;
+	overflow: hidden;
+	.wrap {
+		text-align: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		overflow: hidden;
+		.right {
+			padding: 3.6rem;
+			.tab {
+				left: -2rem;
+				display: inline;
+				background: $dark-grey;
+				color: $white;
+			}
+			.title p {
+				text-transform: uppercase;
+				color: $grey;
+				font-size: 2.5rem;
+				line-height: 1;
+				font-weight: 600;
+				font-family:$font-family-secondary;
+				margin: 2rem 0;
+				strong {
+					font-weight: 600;
+					color: $blue
+				}
+			}
+			.pagelink {
+				color: $dark-grey;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin: 3rem 0 0 0;
+				display: inline-block;
+				background:  url(images/arrow-pagelink-grey.png) top right no-repeat;
+				font-weight: 400;
+				padding: 0 35px 0 0;
+				height: 25px;
+				&:hover {
+					color: $blue;
+					background:  url(images/arrow-pagelink-blue.png) center right no-repeat;
+				}
+			}
+		}
+
+	}
+
+	.location {
+		background: $border-grey;
+		display: block;
+		width: 100%;
+		margin: 0 0 0.5rem 0;
+		position: relative;
+		overflow: hidden;
+		.marker {
+			display: inline-block;
+			padding: 0.5rem 0.8rem;
+			background: $blue;
+			color: $white;
+			font-size: 1.8rem;
+			&:hover {
+				color: $dark-grey;
+			}
+		}
+		p {
+			display: inline-block;
+			padding: 0.4rem 0.8rem;
+			margin: 0;
+			color: $dark-grey;
+			font-weight: 600;
+			a {
+				color: $blue;
+				font-weight: 400;
+				letter-spacing: 0.1rem;
+				font-family: $font-family-blocky;
+				text-transform: uppercase;
+				text-decoration: underline;
+				&:hover {
+					color: $dark-grey;
+				}
+			}
+		}
+		.view {
+			float: right;
+			background: $grey;
+			color: $white;
+			font-weight: 400;
+			letter-spacing: 0.2rem;
+			font-family: $font-family-blocky;
+			width: 4rem;
+			padding: 0.8rem 1rem;
+			text-transform: uppercase;
+			line-height: 1;
+			font-size: 0.9rem;
+			text-align: center;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+}
+
+.quote-slider {
+	background: url(images/home-quote-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 4rem 0;
+	overflow: hidden;
+	.wrap-quote {
+		overflow: hidden;
+		height: auto;
+		display: none;
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 0 1rem 0;
+		.flickity-page-dots {
+			text-align: right;
+			right: 12%;
+			bottom: 0;
+			.dot {
+			    background: #fff;
+			}
+		}
+	}
+	.flickity-enabled {
+		display: block;
+	}
+	.slide {
+		width: 100%;
+	}
+	.profile {
+		width: 200px;
+		height: 200px;
+		background-size: cover !important;
+		border-radius: 100%;
+		display: inline-block;
+		margin: 0 0 0 5%;
+	}
+	.quote {
+		background: $white url(images/quote.png) top right no-repeat;
+		width: 54%;
+		display: inline-block;
+		padding: 4rem 4rem 2rem 4rem;
+		margin: 0 5%;
+		position: relative;
+		.details {
+			position: relative;
+			top: -2rem;
+			left: -4rem;
+			.name {
+				background: $blue;
+				padding: 0.6rem 2rem;
+				color: $white;
+				font-weight: 600;
+				margin: 0 0.8rem 0 0;
+			}
+			.loaction {
+				text-transform: uppercase;
+				color: $grey;
+				letter-spacing: 0.1rem;
+				font-family: $font-family-blocky;
+			}
+			.certificates {
+				text-transform: uppercase;
+				color: $light-grey;
+				display: block;
+				margin: 2rem 0 0 2rem;
+				font-weight: 400;
+			}
+		}
+	}
+	.pagelink {
+		color: $dark-grey;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+		margin: 1rem 0 0 28%;
+		display: inline-block;
+		background:  url(images/arrow-pagelink-white.png) top right no-repeat;
+		font-weight: 400;
+		padding: 0 35px 0 0;
+		height: 25px;
+		z-index: 99;
+		font-family: $font-family-blocky;
+		&:hover {
+			color: $blue;
+			background:  url(images/arrow-pagelink-blue.png) center right no-repeat;
+		}
+	}
+}
+
+.news-feed {
+	background: url(images/news-feed-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 4rem 0;
+	position: relative;
+	overflow: hidden;
+	.wrap {
+		border: 1px solid $blue;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.feed {
+			background: $white;
+			width: 30%;
+			margin: 0 0 0 10%;
+			padding: 4rem 2rem 2rem 2rem;
+			.tab {
+				background: $dark-grey;
+				color: $white;
+				font-weight: 400;
+				text-transform: uppercase;
+				position: relative;
+				top: -2rem;
+				left: -2rem;
+				padding: 0.5rem 1rem;
+				display: inline-block;
+				font-size: 0.8rem;
+				letter-spacing: 0.1rem;
+				font-family: $font-family-blocky;
+				margin: 0;
+			}
+			.post {
+				border-bottom: 2px solid $blue;
+				background: url(images/post-arrow.png) bottom right no-repeat;
+				margin: 0 0 1rem 0;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				.post-thumbnail {
+					width: 30%;
+					height: 60px;
+					display: inline-block;
+					margin: 0 3.3% 0 0;
+					background-size: cover !important;
+				}
+				.info {
+					display: inline-block;
+					padding: 0 4rem 0 0;
+					width: 66.6%;
+					.date {
+						color: $light-grey;
+						text-transform: uppercase;
+						font-size: 0.9rem;
+						letter-spacing: 0.1rem;
+						font-family: $font-family-blocky;
+						font-weight: 400;
+					}
+					.title {
+						color: $dark-grey;
+						font-size: 1rem;
+						font-weight: 600;
+						line-height: 1;
+						margin: 0.2rem 0 0 0;
+					}
+				}
+			}
+			.post:hover {
+				background: url(images/post-arrow-black.png) bottom right no-repeat;
+				border-bottom: 2px solid $dark-grey;
+				.title {
+					color: $blue;
+				}
+			}
+			.pagelink {
+				color: $grey;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin: 1rem 0 0;
+				display: inline-block;
+				font-size: 0.8rem;
+				line-height: 1.9;
+				background:  url(images/arrow-pagelink-grey.png) top right no-repeat;
+				font-weight: 600;
+				padding: 0 35px 0 0;
+				height: 25px;
+				&:hover {
+					color: $blue;
+					background:  url(images/arrow-pagelink-blue.png) center right no-repeat;
+				}
+			}
+		}
+		.title-links {
+			text-align: right;
+			color: $white;
+			margin: 0;
+			width: 50%;
+			padding: 5% 5% 0 5%;
+			font-family: $font-family-secondary;
+			text-transform: uppercase;
+
+			.intro-title {
+				font-size: 2rem;
+				font-weight: 300;
+			}
+			.title {
+				font-size: 2.5rem;
+				line-height: 1;
+				font-weight: 300;
+				color: $blue;
+				strong {
+					font-weight: 600;
+				}
+			}
+			.link {
+				display: block;
+				padding: 0.8rem;
+				background: $blue;
+				color: $white;
+				letter-spacing: 1px;
+				margin: 0 0 1rem 0;
+				float: right;
+				clear: both;
+				width: 270px;
+				text-align: center;
+				&:hover {
+					background: $light-grey;
+				}
+			}
+		}
+	}
+	.news-person {
+		position: absolute;
+		bottom: 0;
+		right: 42%;
+		background: url(images/news-feed-person.png) 0 0 no-repeat;
+		background-size: cover;
+		width: 466px;
+		height: 338px;
+		margin: 0 -233px 0 0;
+		z-index: 1;
+	}
+}
+
+.logos .wrap {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	padding: 3rem 0;
+	a {
+		display: block;
+		overflow: hidden;
+	}
+	.fl-logo {
+		width: auto;
+		height: auto;
+		max-width: 200px;
+		max-height: 63px;
+		display: block;
+		overflow: hidden;
+		background-size: cover !important;
+	}
+}
+
+
+@media handheld, only screen and (max-width: 1150px) {
+
+	#homeslider .slide .text-box {
+		.title {
+		    font-size: 3rem;
+		}
+		.blue {
+			font-size: 1.4rem;
+		}
+	}
+
+
+
+}

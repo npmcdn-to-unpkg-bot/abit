@@ -1,0 +1,28 @@
+{
+  "name": "jive",
+  "version": "1.0.0",
+  "description": "Jive Boilerplate with Sass & BrowserSync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rucksack": "^0.1.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/thrv/ace.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/thrv/ace/issues"
+  },
+  "homepage": "https://gitlab.com/thrv/ace#README"
+}

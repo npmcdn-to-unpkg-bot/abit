@@ -1,0 +1,27 @@
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
+    background: #00b0ab
+}
+
+#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus,
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    color: #00b0ab !important;
+}
+
+#wpadminbar {
+    background: #4b4b4b
+}
+
+
+body.taxonomy-product_cat #poststuff,
+.term-description-wrap,
+#display_type,
+#product_cat_thumbnail,
+button.upload_image_button {
+    display: none !important;
+}
+
+.form-field:nth-child(4) label,
+.form-field:nth-child(5) label,
+.form-field:nth-child(6) label {
+    display: none !important;
+}

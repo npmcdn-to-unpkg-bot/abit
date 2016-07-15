@@ -1,0 +1,47 @@
+
+.wrap {
+	max-width: 1400px;
+	width: 96%;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.fullwidth {
+	overflow: hidden;
+	width: 100%;
+}
+.content .wrap,
+.short {
+	overflow: hidden;
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.one-half {
+	overflow: hidden;
+	width: 50%;
+}
+
+.one-third {
+	overflow: hidden;
+	width: 33.333%;
+}
+
+.one-quarter {
+	overflow: hidden;
+	width: 25%;
+}
+
+.one-fifth {
+	overflow: hidden;
+	width: 20%;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,0 +1,174 @@
+
+/* Gravity forms
+-------------------------------------------------------------- */
+
+.ui-datepicker-trigger {
+  border: none;
+}
+
+body .gform_wrapper {
+    overflow: inherit;
+    margin: 0 0;
+    max-width: 100%;
+}
+
+body .gform_wrapper label {
+  font-weight: 400;
+}
+
+body .gform_wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+textarea {
+  -moz-box-sizing: border-box;
+  -moz-border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  border-bottom-color: #e6e6e6;
+  border-radius: 0;
+  margin: 0;
+  outline: none;
+  padding: 0.8rem 0.4rem !important;
+  vertical-align: middle;
+  font-weight: 300;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.select2-container .select2-choice {
+	padding: 0.5rem 0.4rem !important;
+    border: 1px solid #e6e6e6;
+    background: #fafafa;
+}
+
+body .gform_wrapper  li {
+    margin: 0 0 2% 0;
+}
+
+body .gform_wrapper input[type="text"]:focus,
+body .gform_wrapper input[type="url"]:focus,
+body .gform_wrapper input[type="email"]:focus,
+body .gform_wrapper input[type="tel"]:focus,
+body .gform_wrapper input[type="number"]:focus,
+body .gform_wrapper input[type="password"]:focus,
+body .gform_wrapper textarea:focus {
+  border: 1px solid $blue;
+}
+
+.gf_left_half {
+    float: left;
+    width: 49%;
+}
+
+.gf_right_half {
+    float: right;
+    width: 49%;
+
+}
+
+.hidden_label label {
+    display: none;
+}
+
+/* Select Menu Custom */
+select {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-image: url("images/select.png");
+	background-color: #f3f3f3;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-appearance: button;
+	-webkit-border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	-webkit-user-select: none;
+	line-height: 19px;
+	padding: 0.8rem !important;
+	border-radius: 0;
+	width: 97.5%;
+	font-weight: 300;
+	margin: 1px 0 1rem 0 !important;
+	color: $dark-grey;
+}
+
+/* Placeholders */
+form ::-webkit-input-placeholder {
+	color: $light-grey;
+    font-size: 1rem;
+	font-weight: 300;
+    font-style: italic;
+	opacity: 1;
+}
+form :-moz-placeholder {
+	color: $light-grey;
+    font-size: 1rem;
+	font-weight: 300;
+    font-style: italic;
+	opacity: 1;
+}
+form ::-moz-placeholder {
+	color: $light-grey;
+    font-size: 1rem;
+	font-weight: 300;
+    font-style: italic;
+	opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+	color: $light-grey;
+    font-size: 1rem;
+	font-weight: 300;
+    font-style: italic;
+	opacity: 1;
+}
+form input:-ms-input-placeholder {
+	color: $light-grey;
+    font-size: 1rem;
+	font-weight: 300;
+    font-style: italic;
+	opacity: 1;
+}
+
+body .gform_wrapper .gform_footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Errors
+----------------------------------------------------------------
+*/
+
+.validation_error {
+    padding: 0 0 10px 0;
+}
+
+.gfield_error input,
+.gfield_error select,
+.gfield_error textarea {
+    border: $dark-grey 1px solid !important;
+}
+
+.validation_message {
+    color: $blue;
+    font-size: 0.7rem;
+}
