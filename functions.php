@@ -21,7 +21,7 @@
 		}
 		// blog and cat's
 		wp_enqueue_script( 'infinitescroll', '//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js', null, null, true);
-		wp_enqueue_script( 'masonry', 'https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', null, null, true);
+		wp_enqueue_script( 'masonry', 'https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', null, null, true);
 		wp_enqueue_script( 'imagesloaded', '//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js', null, null, true);
 		// contact page
 		wp_enqueue_script( 'Gmap_api', 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDPYBo-pasiBWKmO2HYEykNliIhIrDKWnk', null, null, true );
@@ -31,14 +31,14 @@
 		wp_enqueue_script( 'mixitup', get_stylesheet_directory_uri() . '/js/mixitup.js', array('jquery'), $ver, true );
 		wp_enqueue_script( 'flip', 'https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js', null, null, true);
 
-		wp_enqueue_script( 'flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js', null, null, true);
+		wp_enqueue_script( 'flickity', 'https://unpkg.com/flickity@1.2/dist/flickity.pkgd.min.js', null, null, true);
 		wp_enqueue_script( 'rellax', get_stylesheet_directory_uri() . '/js/rellax.min.js', array('jquery'), $ver, true );
 		wp_enqueue_script('aos', 'https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js', null, null, true);
 		// Document ready
 		wp_enqueue_script( 'custom', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), $ver, true );
 	// Stylesheets
 		wp_enqueue_style( 'aos-css', 'https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css');
-		wp_enqueue_style( 'flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css',null, null, 'screen');
+		wp_enqueue_style( 'flickity', 'https://unpkg.com/flickity@1.2/dist/flickity.min.css',null, null, 'screen');
 		wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/c81fe3ea32.css');
 		// main css
 		wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', null, $ver, 'screen' );
